@@ -16,15 +16,15 @@ formulario.addEventListener('submit', function (evento) {
 //Caso: calcular voltaje (si solo voltaje está vacío)
     if (isNaN(voltaje) && !isNaN(corriente) && !isNaN(resistencia)) {
         const volt = corriente * resistencia;
-        resultado = `🔌 Voltaje (V) = ${volt.toFixed(2)} V`;
+        resultado = `Voltaje (V) = ${volt.toFixed(2)} V`;
 //Caso: calcular corriente (si solo corriente está vacía)
     } else if (!isNaN(voltaje) && isNaN(corriente) && !isNaN(resistencia)) {
         const corr = voltaje / resistencia;
-        resultado = `💡 Corriente (I) = ${corr.toFixed(2)} A`;
+        resultado = `Corriente (I) = ${corr.toFixed(2)} A`;
  //Caso: calcular resistencia (si solo resistencia está vacía)
     } else if (!isNaN(voltaje) && !isNaN(corriente) && isNaN(resistencia)) {
         const res = voltaje / corriente;
-        resultado = `🔧 Resistencia (R) = ${res.toFixed(2)} Ω`;
+        resultado = `Resistencia (R) = ${res.toFixed(2)} Ω`;
 
 //Caso: datos mal ingresados
     } else {
