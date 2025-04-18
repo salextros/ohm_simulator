@@ -1,32 +1,59 @@
+<!-- Declaramos que este documento usa HTML5 -->
 <!DOCTYPE html>
-    <html lang="es">
-        <head>
-            <meta charset="UTF-8" />
-            <title>Simulador ley de Ohm</title>
-            <link rel="stylesheet" href="styles.css" />
-        </head>
-        <body>
-            <h1>⚡Simulador ley de Ohm</h1>
 
-            <div class="circuito">
-                <form id="ohmForm">
-                    <label>Voltaje (V):
-                        <input type="number" id="voltaje" placeholder="En voltios">
-                    </label>
-                    <br></br>
-                    <label>Corriente (I):
-                        <input type="number" id="corriente" placeholder="En amperios" />
-                    </label>
-                    <br></br>
-                    <label>Resistencia (R):
-                        <input type="number" id="resistencia" placeholder="En ohmios" />
-                    </label>
-                    <br></br>
-                    <button type="submit">Calcular</button>
-                </form>
-                <div id="resultado"></div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Simple_circuit.svg" alt="circuito" width="200">
-            </div>
-            <script src="script.js"></script>
-        </body>
-    </html>
+<!-- Etiqueta raíz del documento HTML, indicando idioma español -->
+<html lang="es">
+  <head>
+    <!-- Configura el juego de caracteres para usar tildes, ñ, etc. -->
+    <meta charset="UTF-8" />
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Simulador ley de Ohm</title>
+
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Título principal de la página -->
+    <h1>⚡Simulador ley de Ohm</h1>
+
+    <!-- Contenedor principal del circuito y el formulario -->
+    <div class="circuito">
+
+      <!-- Formulario que captura los valores para calcular -->
+      <form id="ohmForm">
+
+        <!-- Campo para ingresar el voltaje -->
+        <label>Voltaje (V):
+          <input type="number" id="voltaje" placeholder="En voltios" />
+        </label>
+        <br></br>
+
+        <!-- Campo para ingresar la corriente -->
+        <label>Corriente (I):
+          <input type="number" id="corriente" placeholder="En amperios" />
+        </label>
+        <br></br>
+
+        <!-- Campo para ingresar la resistencia -->
+        <label>Resistencia (R):
+          <input type="number" id="resistencia" placeholder="En ohmios" />
+        </label>
+        <br></br>
+
+        <!-- Botón para enviar los datos y calcular -->
+        <button type="submit">Calcular</button>
+      </form>
+
+      <!-- Aquí se mostrará el resultado del cálculo -->
+      <div id="resultado"></div>
+
+      <!-- Imagen representando un circuito eléctrico simple -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Simple_circuit.svg" alt="circuito" width="200" />
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
