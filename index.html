@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8" />
+            <title>Simulador ley de Ohm</title>
+            <link rel="stylesheet" href="styles.css" />
+        </head>
+        <body>
+            <h1>⚡Simulador ley de Ohm</h1>
+
+            <div class="circuito">
+                <form id="ohmForm">
+                    <label>Voltaje (V):
+                        <input type="number" id="voltaje" placeholder="En voltios">
+                    </label>
+                    <br></br>
+                    <label>Corriente (I):
+                        <input type="number" id="corriente" placeholder="En amperios" />
+                    </label>
+                    <br></br>
+                    <label>Resistencia (R):
+                        <input type="number" id="resistencia" placeholder="En ohmios" />
+                    </label>
+                    <br></br>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="resultado"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Simple_circuit.svg" alt="circuito" width="200">
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </html>
